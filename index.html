@@ -6,11 +6,247 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-logo">
+                <a href="/" class="page-logo-link">
+                    Sit <span>on</span> chair
+                </a>
+            </h1>
+            <nav class="page-nav">
+                <ul class="page-nav-list">
+                    <li><a href="">O firmie</a>
+                        <ul class="page-nav-sublist">
+                            <li><a href="">Aktualności</a></li>
+                            <li><a href="">Nasz team</a></li>
+                            <li><a href="">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Galeria</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-slider-bg">
+        <div class="container">
+
+            <div class="banner">
+                <button class="banner-prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+                <button class="banner-next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+                <div class="banner-slides">
+                    <div class="banner-slide banner-slide-active">
+                        
+                        <div class="picture"></div>
+                        <div class="description">
+                            <h1 class="description-title">desc-title</h1>
+                            Lorem ipsum dolor sit.
+                            <button>Zobacz więcej</button>
+                        </div>
+                    </div>
+                    <div class="banner-slide">
+                        slide 2
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="main-articles-list">
+            <div class="container">
+                <h2 class="visuallyhidden">Artykuły</h2>
+                <div class="row">
+                    <div class="col-1-3">
     
+                        <article class="main-article">
+                            <a href="" class="main-article-link">
+                                <img src="./images/box1_img.jpg" alt="">
+    
+                                <div class="main-article-bar">
+                                    <h3 class="main-article-title">
+                                        Chair CLAIR
+                                    </h3>
+                                </div>
+                            </a>
+    
+                        </article>
+    
+                    </div>
+                    <div class="col-1-3">
+                            <article class="main-article">
+                                    <a href="" class="main-article-link">
+                                        <img src="./images/box2_img.jpg" alt="">
+                                        
+                                        <div class="main-article-bar">
+                                            <h3 class="main-article-title">
+                                                Chair MARGARITA
+                                            </h3>
+                                        </div>
+                                    </a>
+            
+                                </article>
+                    </div>
+                    <div class="col-1-3">
+                            <article class="main-article">
+         
+                                <div class="main-article-text">
+                                    <h3 class="main-article-title">
+                                        Find more inputs
+                                    </h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum voluptatum cumque, eius, reprehenderit, facere similique atque magni fugit consequuntur officia debitis eos fuga? Recusandae eos quibusdam modi nulla esse!
+
+                                </div>
+                            </article>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+        <section class="main-price-list">
+            <div class="container">
+                <h2 class="section-title">
+                    Cennik
+                </h2>
+                <div class="row">
+                    <div class="col-1-3">
+                        <div class="main-price-list__plan">
+                            <span class="circle"></span>
+                            <h2>basic plan</h2>
+                            <span class="price">
+                                    <p class="price-qty">85<sup>99</sup></p> 
+                                    <p>pln/msc</p>
+                            </span>
+                           <div class="plan-features">
+                               <span class="plan-feature">Zakup towaru + dowóz</span>
+                               <span class="plan-feature-even">Serwis</span>
+                           </div>
+                           <div class="plan-bottom">
+                            <button class="subscribe-button">Dołącz</button>
+                     </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3">
+                        <div class="main-price-list__plan-middle">
+                            <h2>standard plan</h2>
+                            <span class="price-middle">
+                                <p class="price-middle-qty">95<sup>99</sup></p> 
+                                <p>pln/msc</p>
+                            </span>
+                            <div class="plan-features">
+                                <span class="plan-feature">Zakup + dowóz</span>
+                                <span class="plan-feature-even">Serwis</span>
+                                <span class="plan-feature">Gwarancja 5 lat</span>
+                            </div>
+                            <div class="plan-bottom">
+                                <button class="subscribe-button">Dołącz</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3">
+                        <div class="main-price-list__plan">
+                            <span class="circle"></span>
+                            <h2>advanced plan</h2>
+                            <span class="price">
+                                    <p class="price-qty">211<sup>00</sup></p> 
+                                    <p>pln/msc</p>
+                            </span>
+                            <div class="plan-features">
+                                <span class="plan-feature">Zakup towaru + dowóz</span>
+                                <span class="plan-feature-even">Serwis</span>
+                                <span class="plan-feature">Gwarancja 6 lat</span>
+                                <span class="plan-feature-even">Porady projektanta</span>
+                            </div>
+                            <div class="plan-bottom">
+                                <button class="subscribe-button">Dołącz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section class="main-contact">
+        <div class="container">
+            <h2 class="section-title">
+                Kontakt
+            </h2>
+
+            <form class="form">
+                <div class="form-left">
+
+                    <div class="form-row">
+                        <label for="name" class="visuallyhidden">imię</label>
+                        <input type="text" id="name" name="userName" placeholder="imię">
+                    </div>
+                    <div class="form-row">
+                        <label for="email" class="visuallyhidden">Email</label>
+                        <input type="email" id="email" name="userEmail" placeholder="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="msg" class="visuallyhidden">wiadomość</label>
+                        <textarea type="txt" id="msg" name="msg" placeholder="Wiadomość"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-right">
+                    <div class="form-img"></div>
+                    <div class="form-row">
+                        <label class="form-checkbox">
+                            <input type="checkbox">
+                            <span></span>
+                            Zgadzam się na przetwarzanie danych osobowych
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn form-submit">wyślij</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-left-content">
+                <p class="copyright">Copyright 2014 | All rights reserved - Sit On Chair</p>
+            </div>
+            <div class="footer-right-content">
+                <ul class="footer-icons-list">
+                     
+                    <a href="" class="footer-single-icon">
+                        <img src="./images/flickr.png" alt="flickr contact">
+                    </a>
+                    <a href="" class="footer-single-icon">
+                        <img src="./images/vimeo.png" alt="vimeo contact">
+                    </a>
+                    <a href="" class="footer-single-icon">
+                        <img src="./images/pinterest.png" alt="pinterest contact">
+                    </a>
+                    <a href="" class="footer-single-icon">
+                        <img src="./images/twitter.png" alt="twitter contact">
+                    </a>
+                </ul>
+                <a class="footer-logo">
+                    SIT <b>ON</b> CHAIR
+                </a>
+            </div>
+        </div>
+    </footer>
+   
 </body>
 </html>
