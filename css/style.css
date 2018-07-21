@@ -108,15 +108,16 @@ img {
 }
 
 .page-nav-sublist {
-    /* opacity: 0; */
+    opacity: 0;
     visibility: hidden;
     background: black;
     position: absolute;
     left: 50%;
     top: 55px;
-    transform: translate(-50%, 0);
+    transform: translate(-50%,0);
     padding: 10px 0;
     transition: 0.4s opacity;
+    z-index: 2;
 }
 
 .page-nav-list li:hover .page-nav-sublist {
@@ -126,20 +127,21 @@ img {
 
 .page-nav-sublist::before {
     content: '';
-    width: 100px;
-    height: 100px;
-    display: block;
+    width: 0;
+    height: 0;
     border: 10px solid transparent;
     border-bottom-color: black;
+    display: block;
     position: absolute;
     left: 50%;
     top: -20px;
-    transform: translate(-50%, 0);
+    transform: translate(-50%,0);
 }
 .page-nav-sublist li {
     display: block;
 }
 .page-nav-sublist a {
+    text-align: center;
     text-transform: none;
     font-weight: normal;
     line-height: 2em;
@@ -210,9 +212,10 @@ img {
     left: 0;
     top: 0;
     width: 100%;
-    font-size: 100px;
     opacity: 0;
     transition: 0.5s opacity;
+    display: flex;
+    justify-content: space-between;
 }
 
 .banner-slide-active {
@@ -220,17 +223,64 @@ img {
     z-index: 1;
 }
 .picture {
-    max-width: 400px;
+    /* position: absolute; */
+    /* max-width: 400px; */
     height: 500px;
+    display: inline-block;
+    width: 50%;
+    padding-left: 90px;
     background-image: url('../images/black_chair.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .description {
-    max-width: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    width: 50%;
     height: 500px;
-    border: 1px solid red;
+}
+
+.description h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+    margin-top: 70px;
+
+}
+
+.description span {
+    color: var(--color);
+    font-weight: bold;
+}
+
+.description-text {
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 130px;
+    font-size: 17px;
+
+}
+
+.slide-description-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-description-bottom .subscribe-button {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+.slide-description-bottom .subscribe-button:hover {
+    background-color: var(--color-hover);
 }
 
 /* MAIN ARICLE HERE */
